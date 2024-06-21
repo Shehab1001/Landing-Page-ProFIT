@@ -59,8 +59,9 @@ export default function NavBar() {
         </ul>
 
         <div className="hidden lg:flex items-center">
-          <NavLink to="/login" className="px-3 py-2 rounded-md text-lg  text-white font-bold me-2">Login</NavLink>
-          <NavLink to="/login">
+          <NavLink to="https://pro-fit-seven.vercel.app/login" className="px-3 py-2 rounded-md text-lg  text-white font-bold me-2">Login</NavLink>
+          
+          <NavLink to="https://pro-fit-seven.vercel.app/signup">
             <Button type="secondary">
               <p className="flex justify-center p-1 font-bold tracking-wide items-center gap-2">
                 <span>Get Started</span>

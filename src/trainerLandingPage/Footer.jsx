@@ -7,6 +7,7 @@ import '../styles/mediaQuery.css';
 import { Link as ScrollLink } from 'react-scroll';
 import Button from '../ui/Button';
 import { HiArrowLongRight } from 'react-icons/hi2';
+import { NavLink } from 'react-router-dom';
 
 export default function Footer() {
     return <>
@@ -16,14 +17,14 @@ export default function Footer() {
             <div className='flex justify-center text-center text-base md:text-lg font-normal'>Reach More Clients, Build Better Plans and Maximize Profitability.</div>
             
             <div className='mt-8'>
-            <a href="#">
+            <NavLink to="https://pro-fit-seven.vercel.app/login">
               <Button type="secondary">
                 <p className="flex justify-center font-bold tracking-wide items-center gap-2">
                   <span>Join Our Community</span>
                   <HiArrowLongRight className="text-xl" />
                 </p>
               </Button>
-            </a>
+            </NavLink>
 
         
           

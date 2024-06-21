@@ -12,6 +12,7 @@ import { PiCurrencyCircleDollar } from "react-icons/pi";
 import Button from '../ui/Button';
 import { HiArrowLongRight } from 'react-icons/hi2';
 import Accordion from '../ui/Accordion';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -201,14 +202,17 @@ export default function Features() {
             <div className='md:w-1/2  w-3/4 text-center text-gray-500 text-lg'>With ProFIT's dashboard, you're not just a trainer, you're a data-driven business leader, empowered to make informed decisions and propel your fitness career to new heights.</div>
 
             <div className='my-16'>
-                <a href="#">
-                    <Button >
+     
+                    <NavLink to ="https://pro-fit-seven.vercel.app/signup">
+                    <Button>
                         <p className="flex justify-center text-base font-bold tracking-wide items-center gap-2">
                             <span>Sign Up Now</span>
                             <HiArrowLongRight className="text-xl" />
                         </p>
                     </Button>
-                </a>
+                    </NavLink>
+                   
+            
             </div>
             <div className='lg:w-[850px] w-3/4 mb-32 container-to-animate' ref={(el) => (containerRef.current[0] = el)}>
                 <img src="src\trainerLandingPage\imgs\dashboard.png" alt="" srcSet="" />
@@ -241,14 +245,16 @@ export default function Features() {
                             </li>
                         </ul>
 
-
-                        <button className='`transition-all duration-300 px-4 py-3 border-white border-2 text-sm font-bold rounded-md
+                    <NavLink to="https://pro-fit-seven.vercel.app/login">
+                    <button className='`transition-all duration-300 px-4 py-3 border-white border-2 text-sm font-bold rounded-md
                 text-white bg-cyan-600 hover:bg-transparent hover:text-cyan-600 hover:border-cyan-600 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-cyan-600`,'>
                             <p className="flex justify-center text-base font-bold tracking-wide  items-center gap-2">
                                 <span>Learn More</span>
 
                             </p>
                         </button>
+                    </NavLink>
+                    
 
 
 
@@ -275,7 +281,7 @@ export default function Features() {
                             </li>
                         </ul>
 
-
+                        <NavLink to="https://pro-fit-seven.vercel.app/login">
                         <button className='`transition-all duration-300 px-4 py-3 border-white border-2 text-sm font-bold rounded-md
                 text-white bg-cyan-600 hover:bg-transparent hover:text-cyan-600 hover:border-cyan-600 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-cyan-600`,'>
                             <p className="flex justify-center text-base font-bold tracking-wide  items-center gap-2">
@@ -283,6 +289,8 @@ export default function Features() {
 
                             </p>
                         </button>
+                        </NavLink>
+                 
 
                     </div>
                     <div className='w-[540px] hidden lg:block'>
@@ -313,7 +321,7 @@ export default function Features() {
                             </li>
                         </ul>
 
-
+                        <NavLink to="https://pro-fit-seven.vercel.app/login">
                         <button className='`transition-all duration-300 px-4 py-3 border-white border-2 text-sm font-bold rounded-md
                 text-white bg-cyan-600 hover:bg-transparent hover:text-cyan-600 hover:border-cyan-600 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-cyan-600`,'>
                             <p className="flex justify-center text-base font-bold tracking-wide  items-center gap-2">
@@ -321,6 +329,8 @@ export default function Features() {
 
                             </p>
                         </button>
+                        </NavLink>
+      
 
 
 
@@ -338,6 +348,7 @@ export default function Features() {
                             <div className='text-gray-900 md:text-xl text-lg mb-8  md:mb-16'>Free yourself from administrative burdens and dedicate more time to what matters most: helping your clients achieve their fitness goals.</div>
                         </div>
 
+                        <NavLink to="https://pro-fit-seven.vercel.app/login">
                         <button className='`transition-all duration-300 px-4 py-3 border-transparent border-2 text-sm font-bold rounded-md
 text-white bg-orange-600 hover:bg-transparent hover:text-orange-600 hover:border-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-cyan-600`,'>
                             <p className="flex justify-center text-base font-bold tracking-wide  items-center gap-2">
@@ -345,6 +356,8 @@ text-white bg-orange-600 hover:bg-transparent hover:text-orange-600 hover:border
 
                             </p>
                         </button>
+                        </NavLink>
+                     
 
                     </div>
                     <div className='w-[540px] hidden lg:block'>
@@ -374,7 +387,7 @@ text-white bg-orange-600 hover:bg-transparent hover:text-orange-600 hover:border
                         </div>
 
 
-
+                        <NavLink to="https://pro-fit-seven.vercel.app/login">
                         <button className='`transition-all duration-300 px-4 py-3 border-transparent border-2 text-sm font-bold rounded-md
 text-white bg-indigo-600 hover:bg-transparent hover:text-indigo-600 hover:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-cyan-600`,'>
                             <p className="flex justify-center text-base font-bold tracking-wide  items-center gap-2">
@@ -382,6 +395,8 @@ text-white bg-indigo-600 hover:bg-transparent hover:text-indigo-600 hover:border
 
                             </p>
                         </button>
+                        </NavLink>
+          
 
                     </div>
                 </div>
