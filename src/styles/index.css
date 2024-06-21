@@ -1,0 +1,305 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/*MediaQuery*/
+
+/*-----------------Navbar Section----------------------*/
+
+@media (min-width: 768px) and (max-width: 918px) {
+  .coachImage img{
+    width: 600px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .features-list{
+  
+    font-size: 20px;
+  }
+  
+}
+
+@media (max-width: 425px) {
+    
+  .network .subtitle{
+    width: 75%;
+    margin-left: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+
+
+
+  .network{
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+}
+
+@media (max-width: 640px) {
+  .network .Image{
+    margin-bottom: 24px;
+    
+  }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1350px) {
+  .network .Image img {
+    width: 300px;
+  
+    
+   }
+
+   .levels{
+    width: 75%;
+   }
+  
+
+  
+   .network .Image  {
+    width: 100%;
+
+    justify-content: center;
+    margin-bottom: 10px;
+   }
+  
+   .network .title{
+    font-size: 24px;
+  
+  }
+  
+  .network .subtitle{
+    font-size: 15px;
+    width: 90%;
+   
+    margin-left: 16px;
+    
+  }
+
+
+}
+
+@media (min-width: 1351px) and (max-width: 1500px) {
+ .network .Image img {
+  width: 330px;
+
+  
+ }
+
+ .levels{
+  width: 75%;
+ }
+
+
+
+ .network .Image  {
+  width: 100%;
+
+  justify-content: center;
+ }
+
+ .network .title{
+  font-size: 24px;
+
+}
+
+.network .subtitle{
+  font-size: 15px;
+  
+}
+  
+}
+
+@media (max-width: 425px) {
+  
+  .network .Image img{
+    width: 250px;
+    margin-left: 5rem;
+  }
+
+
+  .network .title{
+    font-size: 24px;
+  }
+
+  .network .subtitle{
+    font-size: 15px;
+    
+  }
+
+}
+
+
+
+
+@media (min-width: 1024px) and (max-width: 1235px) {
+  
+  .navBar{
+    font-size: 17px;
+
+  }
+
+ .navBar .List {
+  padding-right: 35px;
+ }
+
+ .home-list {
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  
+}
+
+.lg\:gap-32 {
+  gap: 0 !important; /* Overriding the gap to set it to zero */
+}
+
+.second-home-list{
+  padding-top: 16px;
+}
+ 
+}
+
+
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color:blue !important;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(450px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  animation-fill-mode: forwards; /* Ensures the element remains in the final state of the animation */
+}
+
+
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link.active::before {
+  width: 80%; /* Or whatever width you prefer for the active state */
+}
+
+
+
+.nav-link {
+  position: relative;
+  overflow: hidden; /* Ensures the pseudo-element does not exceed the link's area */
+  cursor: pointer;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0rem;
+  width: 0%; 
+  height: 5px;
+  background-color: #fff; 
+  transition: width 0.4s ease; 
+  transform-origin: left center; 
+}
+
+.nav-link:hover::before {
+  width: 80%; 
+}
+
+
+
+
+
+.footer-link {
+  position: relative;
+  overflow: hidden; /* Ensures the pseudo-element does not exceed the link's area */
+  cursor: pointer;
+}
+
+.footer-link::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0rem;
+  width: 0%; 
+  height: 2.5px;
+  background-color: #fff; 
+  transition: width 0.4s ease; 
+  transform-origin: left center; 
+}
+
+.footer-link:hover::before {
+  width: 50%; 
+}
+
+.footer-link.active::before {
+  width: 50%; /* Or whatever width you prefer for the active state */
+}
+
+.footer-link.active {
+  font-weight: bold; /* Example style for the active link */
+}
